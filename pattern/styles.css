@@ -1,0 +1,296 @@
+:root {
+	--primary-font: "Roboto", sans-serif;
+}
+
+body {
+	font-family: var(--primary-font);
+	font-size: 1.3rem;
+	font-weight: 400;
+	color: white;
+}
+
+.navbar-dark {
+	background-image: linear-gradient(
+		106deg,
+		hsl(211.10000000000002, 100%, 50%) 44%,
+		RGBA(3, 44, 166, 0.8) 29%
+	);
+}
+
+.nav__icon {
+	width: 1.5rem;
+	height: 1.5rem;
+	fill: white;
+	margin-right: 0.3rem;
+}
+
+.header,
+jumbotron {
+	background-image: linear-gradient(
+			to right bottom,
+			RGBA(0, 180, 219, 0.7),
+			RGBA(3, 44, 166, 0.82)
+		),
+		url(images/img-2.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.display-4 {
+	color: RGBA(3, 44, 166, 0.8);
+}
+
+.display-3,
+.header__text {
+	color: inherit;
+	font-family: inherit;
+}
+
+.dislay-3,
+.card-title,
+.card-text {
+	color: black;
+}
+
+.display-4,
+.display-3 {
+	font-weight: 700;
+}
+.header__text {
+	font-size: 1.5rem;
+}
+
+.btn-outline-success {
+	color: RGBA(0, 180, 219, 0.9);
+	border-color: RGBA(0, 180, 219, 0.7);
+}
+
+.btn-outline-success:hover {
+	background-color: RGBA(0, 180, 219, 0.9);
+	color: #fff;
+	border-color: RGBA(0, 180, 219, 0.9);
+}
+.card__icon {
+	width: 1.3rem;
+	height: 1.3rem;
+	fill: white;
+	transition: all 0.2s;
+}
+
+.card__icon:hover {
+	fill: red;
+}
+
+.btn-danger {
+	background-color: red;
+}
+
+.btn-danger:hover {
+	background-color: white;
+}
+.card__img {
+	object-fit: cover;
+	height: 15rem;
+	transition: transform 0.3s;
+}
+
+.card__img:hover {
+	transform: scale(1.09);
+}
+.card-title {
+	font-size: 2rem;
+}
+
+.footer {
+	background: linear-gradient(to right, #e0eafc, #cfdef3);
+	padding: 3rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.about {
+	background-image: url(images/img-5.svg);
+	height: 36rem;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top: 0.5px solid rgba(0, 0, 0, 0.125);
+	padding: 2rem;
+}
+
+.footer__icon {
+	width: 1.5rem;
+	height: 1.5rem;
+	cursor: pointer;
+	margin-right: 1rem;
+}
+
+.footer__icon:hover {
+	fill: black;
+}
+
+.footer__icon--facebook {
+	fill: #3b5998;
+}
+
+.footer__icon--twitter {
+	fill: #00acee;
+}
+
+.footer__icon--github {
+	fill: #333;
+}
+
+.footer__icon--instagram {
+	fill: #e4405f;
+}
+
+.footer__icon--whatsapp {
+	fill: #25d366;
+}
+.about {
+	height: 41rem;
+}
+
+.form__input,
+.form__btn {
+	position: absolute;
+}
+
+.about__heading {
+	text-align: center;
+}
+
+.about__img {
+	width: 30rem;
+	object-fit: cover;
+	flex: 1 1 30%;
+}
+
+.about__box {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+form {
+	order: -1;
+	flex: 1 1 60%;
+	position: relative;
+}
+
+.form__input {
+	padding: 1rem;
+	outline: none;
+	border: none;
+	border-radius: 10rem;
+	width: 60%;
+	font-size: inherit;
+	font-family: inherit;
+	font-style: italic;
+	top: 0;
+	left: 36%;
+}
+
+.form__input:focus {
+	outline: none;
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+	border-bottom: 5px solid green;
+}
+
+.form__input:focus:invalid {
+	border-bottom: 5px solid red;
+}
+
+.form__btn {
+	border: none;
+	outline: none;
+	padding: 0.7rem 1.5rem;
+	border-radius: 3rem;
+	top: 0;
+	left: 87%;
+}
+
+.form__icon {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+@media only screen and (max-width: 75em) {
+}
+
+@media only screen and (max-width: 50em) {
+	.footer {
+		flex-direction: column;
+	}
+
+	.footer__social {
+		display: flex;
+		justify-content: center;
+	}
+
+	.display-4 {
+		font-size: 2.5rem;
+	}
+
+	.about__box,
+	.about__img {
+		display: block;
+	}
+
+	.about__img {
+		margin: 0 auto;
+	}
+
+	.about {
+		height: 43rem;
+	}
+
+	.form__input {
+		left: 20%;
+	}
+}
+
+@media only screen and (max-width: 31.25em) {
+	.about__img {
+		width: 100%;
+	}
+	.form__btn {
+		top: 5rem;
+		left: 30%;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	.form__input {
+		width: 100%;
+		left: 0;
+	}
+
+	body {
+		font-size: 1.1rem;
+	}
+
+	.card-title {
+		font-size: 1.5rem;
+	}
+
+	.display-4 {
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (max-width: 25em) {
+	.about {
+		height: 40rem;
+	}
+
+	.form__btn {
+		left: 32%;
+	}
+
+	.about__heading {
+		color: RGBA(3, 44, 166, 0.8);
+	}
+}
