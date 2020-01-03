@@ -3,14 +3,14 @@
 
 ## <center>Pattern &mdash; The Best Illustrative Patterns</center>
 
-###Desktop view 👇: 
+### Desktop view 👇: 
 
 
 ![Desktop view](images/pattern-desktop.png )
 
 
 
-##About Me
+## About Me
 Hey 🖐, I am Simeon Udoh 🙋‍♂️, A beginner frontend developer. Yes, I don't bite... So go follow me on 👇: 
 +  [Twitter](https://twitter.com/Techviberng)
 +   [Facebook](https://facebook.com/Simeon.udoh.71)
